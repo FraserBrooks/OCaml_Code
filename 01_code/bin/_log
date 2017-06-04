@@ -1,0 +1,24 @@
+### Starting build.
+# Target: chapter_1.ml.depends, tags: { bin_annot, debug, extension:ml, file:chapter_1.ml, ocaml, ocamldep, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -modules chapter_1.ml > chapter_1.ml.depends
+# Target: chapter_1.cmo, tags: { bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:chapter_1.cmo, file:chapter_1.ml, implem, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o chapter_1.cmo chapter_1.ml
++ ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o chapter_1.cmo chapter_1.ml
+File "chapter_1.ml", line 10, characters 1-9:
+Warning 6: labels were omitted in the application of this function.
+File "chapter_1.ml", line 62, characters 19-28:
+Warning 27: unused variable endpoint1.
+File "chapter_1.ml", line 62, characters 30-39:
+Warning 27: unused variable endpoint2.
+# Target: chapter_1.cmx, tags: { bin_annot, compile, debug, extension:cmx, extension:ml, file:chapter_1.cmx, file:chapter_1.ml, implem, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o chapter_1.cmx chapter_1.ml
++ ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o chapter_1.cmx chapter_1.ml
+File "chapter_1.ml", line 10, characters 1-9:
+Warning 6: labels were omitted in the application of this function.
+File "chapter_1.ml", line 62, characters 19-28:
+Warning 27: unused variable endpoint1.
+File "chapter_1.ml", line 62, characters 30-39:
+Warning 27: unused variable endpoint2.
+# Target: chapter_1.native, tags: { bin_annot, debug, dont_link_with, extension:native, file:chapter_1.native, link, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), program, quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt -linkpkg -g -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core chapter_1.cmx -o chapter_1.native
+# Compilation successful.

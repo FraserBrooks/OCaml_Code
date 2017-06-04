@@ -1,0 +1,5 @@
+"Resource: /mnt/c/Users/Frase/OneDrive/Documents/GitHub/OCaml_Code/99_ocaml_problems/99_ocaml_problems.ml": "\171@\138m\254/C}\168%\007\017`\167\210E"
+"Rule: ocaml: ml & cmi -> cmx & o (%=99_ocaml_problems )": "\153\140,\026\006\196\216O\168\001\223\155}a\005g"
+"Rule: ocaml dependencies ml (%=99_ocaml_problems )": "\239u\177\168\150\t\205g\248\177\180\147\170\000\155x"
+"Rule: ocaml: cmx* & o* -> native (%=99_ocaml_problems )": "\190F\nuG\191\205.\232\002\231!\190D\245\203"
+"Rule: ocaml: ml -> cmo & cmi (%=99_ocaml_problems )": "%I\028l\176\244\1331\006\021)m[\029-H"

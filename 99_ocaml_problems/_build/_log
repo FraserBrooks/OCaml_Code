@@ -1,0 +1,16 @@
+### Starting build.
+# Target: 99_ocaml_problems.ml.depends, tags: { extension:ml, file:99_ocaml_problems.ml, ocaml, ocamldep, quiet }
+/home/fraser/.opam/4.02.1/bin/ocamldep.opt -modules 99_ocaml_problems.ml > 99_ocaml_problems.ml.depends
+# Target: 99_ocaml_problems.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:99_ocaml_problems.cmo, file:99_ocaml_problems.ml, implem, ocaml, quiet }
+/home/fraser/.opam/4.02.1/bin/ocamlc.opt -c -o 99_ocaml_problems.cmo 99_ocaml_problems.ml
++ /home/fraser/.opam/4.02.1/bin/ocamlc.opt -c -o 99_ocaml_problems.cmo 99_ocaml_problems.ml
+File "99_ocaml_problems.ml", line 1:
+Warning 24: bad source file name: "99_ocaml_problems" is not a valid module name.
+# Target: 99_ocaml_problems.cmx, tags: { compile, extension:cmx, extension:ml, file:99_ocaml_problems.cmx, file:99_ocaml_problems.ml, implem, native, ocaml, quiet }
+/home/fraser/.opam/4.02.1/bin/ocamlopt.opt -c -o 99_ocaml_problems.cmx 99_ocaml_problems.ml
++ /home/fraser/.opam/4.02.1/bin/ocamlopt.opt -c -o 99_ocaml_problems.cmx 99_ocaml_problems.ml
+File "99_ocaml_problems.ml", line 1:
+Warning 24: bad source file name: "99_ocaml_problems" is not a valid module name.
+# Target: 99_ocaml_problems.native, tags: { dont_link_with, extension:native, file:99_ocaml_problems.native, link, native, ocaml, program, quiet }
+/home/fraser/.opam/4.02.1/bin/ocamlopt.opt 99_ocaml_problems.cmx -o 99_ocaml_problems.native
+# Compilation successful.

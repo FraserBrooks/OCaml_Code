@@ -1,0 +1,8 @@
+### Starting build.
+# Target: q1_mock_exam.ml.depends, tags: { extension:ml, file:q1_mock_exam.ml, ocaml, ocamldep, quiet }
+/home/fraser/.opam/4.02.1/bin/ocamldep.opt -modules q1_mock_exam.ml > q1_mock_exam.ml.depends
++ /home/fraser/.opam/4.02.1/bin/ocamldep.opt -modules q1_mock_exam.ml > q1_mock_exam.ml.depends
+File "q1_mock_exam.ml", line 25, characters 38-40:
+Error: Syntax error
+Command exited with code 2.
+# Compilation unsuccessful.

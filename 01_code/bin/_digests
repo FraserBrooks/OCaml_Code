@@ -1,0 +1,5 @@
+"Rule: ocaml dependencies ml (%=chapter_1 )": "\023\140\232\191=j\177-f\157I\\\151\253\229\202"
+"Resource: /mnt/c/Users/Frase/OneDrive/Documents/GitHub/OCaml_Code/01_code/src/chapter_1.ml": "ct\173*N`\231\205\012\018[\233Y\238\197\239"
+"Rule: ocaml: cmx* & o* -> native (%=chapter_1 )": "\235\229@d\176(s\232\229\180B\199\247\n\bd"
+"Rule: ocaml: ml -> cmo & cmi (%=chapter_1 )": "\021\248TI\207\133F\021\242\171\138\192\152O\136\170"
+"Rule: ocaml: ml & cmi -> cmx & o (%=chapter_1 )": "\161\220\147}\158p\226x)s+j\2147\r@"
