@@ -1,16 +1,132 @@
 ### Starting build.
-# Target: 99_ocaml_problems.ml.depends, tags: { extension:ml, file:99_ocaml_problems.ml, ocaml, ocamldep, quiet }
-/home/fraser/.opam/4.02.1/bin/ocamldep.opt -modules 99_ocaml_problems.ml > 99_ocaml_problems.ml.depends
-# Target: 99_ocaml_problems.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:99_ocaml_problems.cmo, file:99_ocaml_problems.ml, implem, ocaml, quiet }
-/home/fraser/.opam/4.02.1/bin/ocamlc.opt -c -o 99_ocaml_problems.cmo 99_ocaml_problems.ml
-+ /home/fraser/.opam/4.02.1/bin/ocamlc.opt -c -o 99_ocaml_problems.cmo 99_ocaml_problems.ml
+# Target: 99_ocaml_problems.ml.depends, tags: { bin_annot, debug, extension:ml, file:99_ocaml_problems.ml, ocaml, ocamldep, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -modules 99_ocaml_problems.ml > 99_ocaml_problems.ml.depends
+# Target: 99_ocaml_problems.cmo, tags: { bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:99_ocaml_problems.cmo, file:99_ocaml_problems.ml, implem, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o 99_ocaml_problems.cmo 99_ocaml_problems.ml
++ ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o 99_ocaml_problems.cmo 99_ocaml_problems.ml
 File "99_ocaml_problems.ml", line 1:
 Warning 24: bad source file name: "99_ocaml_problems" is not a valid module name.
-# Target: 99_ocaml_problems.cmx, tags: { compile, extension:cmx, extension:ml, file:99_ocaml_problems.cmx, file:99_ocaml_problems.ml, implem, native, ocaml, quiet }
-/home/fraser/.opam/4.02.1/bin/ocamlopt.opt -c -o 99_ocaml_problems.cmx 99_ocaml_problems.ml
-+ /home/fraser/.opam/4.02.1/bin/ocamlopt.opt -c -o 99_ocaml_problems.cmx 99_ocaml_problems.ml
+File "99_ocaml_problems.ml", line 158, characters 74-98:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 158, characters 99-118:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 159, characters 55-74:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 179, characters 87-106:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 179, characters 107-126:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 180, characters 57-76:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 196, characters 86-105:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 196, characters 106-128:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 218, characters 81-100:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 253, characters 92-111:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 270, characters 101-120:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 274, characters 12-16:
+Warning 39: unused rec flag.
+File "99_ocaml_problems.ml", line 283, characters 92-111:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 293, characters 89-108:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 293, characters 109-128:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 306, characters 102-121:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 306, characters 122-141:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 316, characters 84-103:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 316, characters 104-123:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 326, characters 103-122:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 327, characters 57-76:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 344, characters 85-104:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 344, characters 105-124:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 345, characters 57-76:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 345, characters 77-96:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 359, characters 90-109:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 359, characters 110-129:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 360, characters 59-78:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 360, characters 79-98:
+Warning 48: implicit elimination of optional argument ?nl
+# Target: 99_ocaml_problems.cmx, tags: { bin_annot, compile, debug, extension:cmx, extension:ml, file:99_ocaml_problems.cmx, file:99_ocaml_problems.ml, implem, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o 99_ocaml_problems.cmx 99_ocaml_problems.ml
++ ocamlfind ocamlopt -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o 99_ocaml_problems.cmx 99_ocaml_problems.ml
 File "99_ocaml_problems.ml", line 1:
 Warning 24: bad source file name: "99_ocaml_problems" is not a valid module name.
-# Target: 99_ocaml_problems.native, tags: { dont_link_with, extension:native, file:99_ocaml_problems.native, link, native, ocaml, program, quiet }
-/home/fraser/.opam/4.02.1/bin/ocamlopt.opt 99_ocaml_problems.cmx -o 99_ocaml_problems.native
+File "99_ocaml_problems.ml", line 158, characters 74-98:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 158, characters 99-118:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 159, characters 55-74:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 179, characters 87-106:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 179, characters 107-126:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 180, characters 57-76:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 196, characters 86-105:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 196, characters 106-128:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 218, characters 81-100:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 253, characters 92-111:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 270, characters 101-120:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 274, characters 12-16:
+Warning 39: unused rec flag.
+File "99_ocaml_problems.ml", line 283, characters 92-111:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 293, characters 89-108:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 293, characters 109-128:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 306, characters 102-121:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 306, characters 122-141:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 316, characters 84-103:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 316, characters 104-123:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 326, characters 103-122:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 327, characters 57-76:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 344, characters 85-104:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 344, characters 105-124:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 345, characters 57-76:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 345, characters 77-96:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 359, characters 90-109:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 359, characters 110-129:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 360, characters 59-78:
+Warning 48: implicit elimination of optional argument ?nl
+File "99_ocaml_problems.ml", line 360, characters 79-98:
+Warning 48: implicit elimination of optional argument ?nl
+# Target: 99_ocaml_problems.native, tags: { bin_annot, debug, dont_link_with, extension:native, file:99_ocaml_problems.native, link, native, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), program, quiet, short_paths, syntax(camlp4o), thread }
+ocamlfind ocamlopt -linkpkg -g -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core 99_ocaml_problems.cmx -o 99_ocaml_problems.native
 # Compilation successful.

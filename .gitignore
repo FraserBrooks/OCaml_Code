@@ -1,3 +1,20 @@
+
+
+
+# OCaml
+bin/
+*.native
+*.cmx
+*.cmi
+_build/
+*.o
+*.swo
+
+
+
+
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
