@@ -9,7 +9,8 @@ bin/
 _build/
 *.o
 *.swo
-
+*.swp
+_build/*
 
 
 
