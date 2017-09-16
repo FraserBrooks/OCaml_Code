@@ -198,23 +198,96 @@ let rec all_primes' a b =
 ;;
 
 
+(* 40. Goldbach's Conjecture    *)
 
+let goldbach n =
+    let is_prime a =
+        let a = max a (-a) in
+        let rec aux b =
+        b * b > a || (a mod b <> 0 && aux (b+1)) in
+        aux 2
+    in
+    let rec all_primes a lim =
+    if a > lim then [] else
+        let rest = all_primes (a + 1) lim in
+        if is_prime a then a :: rest else rest
+    in
+    let primes = all_primes 2 n 
+    in
+    let rec aux acc = function
+        |[] -> acc
+        |h::tl ->
+            if h * 2 > n then acc else
+            if is_prime (n - h) then aux ((h,n-h)::acc) tl
+            else aux acc tl
+    in
+    aux [] primes
+;;
+(* val goldbach: : int -> (int * int) list = <fun>   *)
 
+(* The solution given on ocaml.org returns the goldbach pair with
+    the smallest n where n is the min of the two prime numbers.
+    The solution above returns a list of all possible goldbach pairs. *)
 
+(* 41. Goldbach's list  *)
 
+let goldbach_list n lim =
+    let rec aux acc n =
+        if n > lim then acc else
+        if n mod 2 <> 0 then aux acc (n+1) else
+        let g = goldbach n in
+        aux ((n,g)::acc) (n+2)
+    in
+    aux [] n
+;;
+(* val goldbach_list : int -> int -> (int * (int * int) list) list = <fun> *)
 
+(* 42. Goldbach's list with min prime *)
 
+let goldbach_limit n lim min_p =
+    let ls = goldbach_list n lim in
+    List.fold_left (fun acc (p, ps) ->
+                let ps = List.filter (fun (a,b) -> (min a b) > min_p) ps
+                in
+                if ps = [] then acc else (p, ps)::acc
+             ) [] ls
+;;
+(* val goldbach_limit : int -> int -> int -> (int * (int * int) list) list = <fun> *)
+  
+(* The below is a modification to my implementation above
+    to check it corresponds to the returned values of the 
+    solution given on ocaml.org (reproduced below)
 
+let rec check_last m = function
+    |[] -> None
+    |[(a,b) as p] -> if (min a b) > m then Some p else None
+    |_::tl -> check_last m tl 
+;;
+let goldbach_limit'' n lim min_p =
+    let ls = goldbach_list n lim in
+    List.fold_left (fun acc (p, ps) ->
+                match (check_last min_p ps) with
+                |None -> acc
+                |Some x -> (p, x)::acc 
+             ) [] ls  ;;  
+*)
 
+(* ocaml.org solution:  *)
+let goldbach' n =
+    let rec aux d =
+      if is_prime d && is_prime (n - d) then (d, n-d)
+      else aux (d+1) in
+    aux 2;;
 
+let rec goldbach_list' a b =
+    if a > b then [] else
+      if a mod 2 = 1 then goldbach_list' (a+1) b
+      else (a, goldbach' a) :: goldbach_list' (a+2) b;;
+  
+  let goldbach_limit' a b lim =
+    List.filter (fun (_,(a,b)) -> a > lim && b > lim) (goldbach_list' a b);;
 
-
-
-
-
-
-
-
+(* end of arithmetic section of 99ocamlproblems  *)
 
 
 
